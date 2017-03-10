@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellowgreen;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiscreenframeworkdemo.controllers.Screen_003Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="249.13671875" layoutY="192.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="249.13671875" AnchorPane.rightAnchor="249.86328125" AnchorPane.topAnchor="192.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SCREEN 003" textAlignment="CENTER" wrappingWidth="100.13671875" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="37.0" fitWidth="145.0" layoutX="506.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <image>
+            <Image url="@../resources/framework_logo_powered_s.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

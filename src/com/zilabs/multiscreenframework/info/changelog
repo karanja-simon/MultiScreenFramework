@@ -1,0 +1,14 @@
+
+ VERSION 1.0.0
+
+    - ScreenFramework is born.
+
+ VERSION 1.0.1
+
+    - Added support for animation, i.e. Slide & Fade animations.
+    - Added support for animation configuration i.e Duration & animation type selection.
+
+ VERSION 2.0.1
+
+    - Rename the framework to MultiScreenFramework
+    - Optimized the framework.

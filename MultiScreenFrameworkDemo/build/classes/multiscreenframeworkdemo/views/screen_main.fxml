@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="531.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiscreenframeworkdemo.controllers.ScreenMainController">
+   <children>
+      <AnchorPane fx:id="wrapperAnchorPane" layoutY="141.0" prefHeight="226.0" prefWidth="531.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <AnchorPane layoutY="-1.0" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="531.0" style="-fx-background-color: gray;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="42.0" layoutY="26.0" maxWidth="448.0" prefHeight="48.0" prefWidth="448.0" spacing="5.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="41.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="120.0" mnemonicParsing="false" onAction="#handleButton001Action" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" styleClass="running-button" text="RUNNING" HBox.hgrow="NEVER">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/running_26.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="120.0" mnemonicParsing="false" onAction="#handleButton002Action" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" styleClass="cycling-button" text="CYCLING" textAlignment="CENTER" HBox.hgrow="NEVER">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/cycling_26.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="TOP" maxWidth="120.0" mnemonicParsing="false" onAction="#handleButton003Action" prefHeight="48.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" styleClass="soccer-button" text="SOCCER" textAlignment="CENTER" HBox.hgrow="NEVER">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/football_26.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

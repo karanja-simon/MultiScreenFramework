@@ -1,0 +1,48 @@
+         
+Project:    ScreenFramework Version 2.0.1
+         Revised:    03 - 08 - 2017 08:57:00 PM
+
+         FRAMEWORK USAGE     #TUT 001/90009
+         ----------------------------------
+
+	1.	Creating Framework object
+		-------------------------
+	        ScreenLoader loader = new ScreenLoader();
+	2.	Setting the view container
+		--------------------------
+                        Setting the AnchorPane that will hold your loaded views/screens
+	        loader.setWrapperAnchorPane(wrapperAnchorPane);
+	3.	Setting the Framework animation
+		-------------------------------
+			The animation can be set either to on or off, using
+			AnimationSettings.ANIMATION_ON or AnimationSettings.ANIMATION_OFF
+			values. E.g
+	        loader.allowAnimation(AnimationSettings.ANIMATION_ON);
+	4.	Setting the animation type
+		-------------------------------
+			There are two inbuilt animation type i.e. AnimationSettings.ANIMATION_FADE
+			and AnimationSettings.ANIMATION_SLIDE. To set any of these, use setAnimation()
+			method. E.g
+	        loader.setAnimationType(AnimationSettings.ANIMATION_FADE);
+	5.	Setting the animation duration
+		------------------------------
+			Set the animation duration. 
+			[NOTE] The duration should be passed in seconds.
+	        loader.setAnimationDuration(1);
+	6.	Loading views/screens
+		--------------------------
+			Assuming your views are stored in Singleton Screen class
+	        Screens screen = Screens.getInstance();
+	        loader.loadScreen(screen.SCREEN_1_NAME, screen.PACKAGE_VIEW + screen.SCREEN_1_FXML);
+	        loader.loadScreen(screen.SCREEN_2_NAME, screen.PACKAGE_VIEW + screen.SCREEN_2_FXML);
+	        
+	7.	Setting/Displaying the view on the scenegraph
+		---------------------------------------------
+			Assuming you have two buttons  to load the views, the displaying the views
+			you need to use the setScreen() method.
+	        view1Button.setOnAction((ActionEvent event) -> {
+	            loader.setScreen(screen.SCREEN_1_NAME);
+	        });
+	        view2Button.setOnAction((ActionEvent event) -> {
+	            loader.setScreen(screen.SCREEN_2_NAME);
+	        });

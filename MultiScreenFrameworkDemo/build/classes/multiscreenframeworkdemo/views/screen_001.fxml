@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="598.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiscreenframeworkdemo.controllers.Screen_001Controller">
+   <children>
+      <HBox alignment="CENTER" layoutX="57.0" layoutY="192.0" prefHeight="431.0" prefWidth="486.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SCRREN 001&#10;The marathon may have ancient roots, but the foot race’s official length of 26.2 miles wasn’t established until the 20th century. The first organized marathon was held in Athens at the 1896 Olympics, the start of the Games’ modern era. The ancient games, which took place in Greece from around 776 B.C. to A.D. 393, never included such long-distance races. The idea for the modern marathon was inspired by the legend of an ancient Greek messenger who raced from the site of Marathon to Athens, a distance of about 40 kilometers, or nearly 25 miles, with the news of an important Greek victory over an invading army of Persians in 490 B.C. After making his announcement, the exhausted messenger collapsed and died. To commemorate his dramatic run, the distance of the 1896 Olympic marathon was set at 40 kilometers.&#10;&#10;For the next few Olympics, the length of the marathon remained close to 25 miles, but at the 1908 Games in London the course was extended, allegedly to accommodate the British royal family. As the story goes, Queen Alexandra requested that the race start on the lawn of Windsor Castle (so the littlest royals could watch from the window of their nursery, according to some accounts) and finish in front of the royal box at the Olympic stadium—a distance that happened to be 26.2 miles (26 miles and 385 yards). The random boost in mileage ending up sticking, and in 1921 the length for a marathon was formally standardized at 26.2 miles (42.195 kilometers)." textAlignment="CENTER" wrappingWidth="483.13671875" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="37.0" fitWidth="145.0" layoutX="496.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <image>
+            <Image url="@../resources/framework_logo_powered_s.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
