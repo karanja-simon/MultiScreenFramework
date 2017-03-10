@@ -113,39 +113,34 @@ view2Button.setOnAction((ActionEvent event) -> {
 }
 ```
 
-#### Demo
-The framework comes bundled with a sample application. The sample is available on demo folder. Just navigate to demo folder and launch the JavaFXMultiScreenDemo.jar in the dist folder.
+##### Demo
+The framework comes bundled with a sample application. The sample is available on demo folder. Just navigate to MultiScreenFrameworkDemo folder and launch the JavaFXMultiScreenDemo.jar in the dist folder.
 	####### Screenshots
-	![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+	![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_001.png)
+	![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_002.png)
 
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
+##### Built With
 
 * [Netbeans](https://netbeans.org/) - Netbeans 8.0.2
 
-## Contributing
+##### Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+##### Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+##### Authors
 
 * **Simon Karanja** - *Initial work* - [zilabs](http://zilabs.pe.hu)
 
-## License
+##### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+##### Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* Margret Kibe
