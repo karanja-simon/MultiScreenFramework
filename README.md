@@ -115,9 +115,10 @@ view2Button.setOnAction((ActionEvent event) -> {
 
 ##### Demo
 The framework comes bundled with a sample application. The sample is available on demo folder. Just navigate to MultiScreenFrameworkDemo folder and launch the JavaFXMultiScreenDemo.jar in the dist folder.
-###### Screenshots
-	![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_001.png)
-	![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_002.png)
+##### Screenshots
+
+![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_001.png)
+![shot_001](/MultiScreenFrameworkDemo/screenshots/shot_002.png)
 
 
 
