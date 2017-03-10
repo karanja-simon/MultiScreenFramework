@@ -1,19 +1,15 @@
 # MultiScreenFramework
 A clean JavaFX framework for managing multiple screens or views.
-###Getting Started
+
+#### Getting Started
 Clone the repo and grab the MultiScreeFramework.jar in the dist directory and import it to your project, then see the installation
 section on how to use it.
 To contribute, please see the contribution section.
 
-### Prerequisites
+#### Prerequisites
+Ensure you have a minimum of Java 8 installed. If you are biulding from sources, ensure you have the latest JDK or atleast JDK8 and above.
 
-Java 8+
-
-```
-Give examples
-```
-
-### Installing
+#### Usage
 
 A step by step series of examples that tell you have to get a development env running
 
