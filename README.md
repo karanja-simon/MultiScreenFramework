@@ -12,13 +12,29 @@ Ensure you have a minimum of Java 8 installed. If you are biulding from sources,
 #### Usage
 To use the library, follow the steps carefully. 
 > Please note that only an AnchorPane is fully supported as the wrapper container.
+1. Step 1
+  Add the ScreenFramework.jar to your project libraries
+2. Step 2
+  Create class, preferrably a Singleton to hold your 
+	screens say Screen.java and	define all your screens/views 
+	with their corresponding ids	E.g
+	
+  ```java
+		class Screen{
+			private final Screen INSTANCE = new Screen();
+			pubic final String PACKAGE = "/com/your/project/";
+			pubic final String SCREEN_1 = "screen1.fxml";
+			pubic final String SCREEN_1_ID = "screen.1";
+			pubic final String SCREEN_2 = "screen2.fxml";
+			pubic final String SCREEN_2_ID = "screen.2";
 
+			private Screen(){}
+			public static Screen getInstance(){
+				return INSTANCE;
+			}
 
-And repeat
-
-```
-until finished
-```
+		}
+    ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
