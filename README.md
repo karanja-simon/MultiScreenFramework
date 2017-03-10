@@ -7,7 +7,7 @@ section on how to use it.
 To contribute, please see the contribution section.
 
 #### Prerequisites
-Ensure you have a minimum of Java 8 installed. If you are biulding from sources, ensure you have the latest JDK or atleast JDK8 and above.
+Ensure you have a minimum of Java 8 installed. If you are building from sources, ensure you have the latest JDK or atleast JDK8 and above.
 
 #### Usage
 To use the library, follow the steps carefully. 
@@ -85,7 +85,7 @@ public class MainViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 	ScreenLoader loader = new ScreenLoader();
-
+	Screens screen = Screens.getInstance();
 	// Configure loader
 	loader.allowAnimation(AnimationSettings.ANIMATION_ON);
 	loader.setAnimationType(AnimationSettings.ANIMATION_FADE);
@@ -99,8 +99,6 @@ public class MainViewController implements Initializable {
 	loader.setScreen(screen.SCREEN_1_NAME);
 	// Set the parent container [Must be AnchorPane]
 	loader.setWrapperAnchorPane(wrapperAnchorPane);
-
-	Screens screen = Screens.getInstance();
 
 
 view1Button.setOnAction((ActionEvent event) -> {
