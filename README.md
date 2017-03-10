@@ -18,18 +18,30 @@ Add the MultiScreenFramework.jar to your project libraries
 Create class, preferrably a Singleton to hold your screens say Screen.java and define all your screens/views with their corresponding   ids E.g
 	
 ```java
-class Screen{
-	private final Screen INSTANCE = new Screen();
-	pubic final String PACKAGE = "/com/your/project/";
-	pubic final String SCREEN_1 = "screen1.fxml";
-	pubic final String SCREEN_1_ID = "screen.1";
-	pubic final String SCREEN_2 = "screen2.fxml";
-	pubic final String SCREEN_2_ID = "screen.2";
+public class Screens {
 
-	private Screen(){}
-	public static Screen getInstance(){
-		return INSTANCE;
-	}
+private static final Screens INSTANCE = new Screens();
+
+private Screens() {
+}
+
+public static Screens getInstance() {
+return INSTANCE;
+}
+
+// Define all the screens/containers here
+// Give a descriptive screen name
+public String SCREEN_1_NAME = "screen_001";
+public String SCREEN_2_NAME = "screen_002";
+public String SCREEN_3_NAME = "screen_003";
+
+// Define the package where your view files are located
+public String PACKAGE_VIEW = "/multiscreenframeworkdemo/views/";
+
+// The actual screen/ui .fxml
+public String SCREEN_1_FXML = "screen_001.fxml";
+public String SCREEN_2_FXML = "screen_002.fxml";
+public String SCREEN_3_FXML = "screen_003.fxml";
 
 }
 ```
