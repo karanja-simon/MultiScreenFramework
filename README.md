@@ -112,25 +112,13 @@ view2Button.setOnAction((ActionEvent event) -> {
 
 }
 ```
-## Running the tests
 
-Explain how to run the automated tests for this system
+#### Demo
+The framework comes bundled with a sample application. The sample is available on demo folder. Just navigate to demo folder and launch the JavaFXMultiScreenDemo.jar in the dist folder.
+	####### Screenshots
+	![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -150,9 +138,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Simon Karanja** - *Initial work* - [zilabs](http://zilabs.pe.hu)
 
 ## License
 
