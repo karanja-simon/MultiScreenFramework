@@ -20,28 +20,28 @@ Create class, preferrably a Singleton to hold your screens say Screen.java and d
 ```java
 public class Screens {
 
-private static final Screens INSTANCE = new Screens();
+    private static final Screens INSTANCE = new Screens();
 
-private Screens() {
-}
+    private Screens() {
+    }
 
-public static Screens getInstance() {
-return INSTANCE;
-}
+    public static Screens getInstance() {
+        return INSTANCE;
+    }
 
-// Define all the screens/containers here
-// Give a descriptive screen name
-public String SCREEN_1_NAME = "screen_001";
-public String SCREEN_2_NAME = "screen_002";
-public String SCREEN_3_NAME = "screen_003";
+    // Define all the screens/containers here
+    // Give a descriptive screen name
+    public String SCREEN_1_NAME = "screen_001";
+    public String SCREEN_2_NAME = "screen_002";
+    public String SCREEN_3_NAME = "screen_003";
 
-// Define the package where your view files are located
-public String PACKAGE_VIEW = "/multiscreenframeworkdemo/views/";
+    // Define the package where your view files are located
+    public String PACKAGE_VIEW = "/multiscreenframeworkdemo/views/";
 
-// The actual screen/ui .fxml
-public String SCREEN_1_FXML = "screen_001.fxml";
-public String SCREEN_2_FXML = "screen_002.fxml";
-public String SCREEN_3_FXML = "screen_003.fxml";
+    // The actual screen/ui .fxml
+    public String SCREEN_1_FXML = "screen_001.fxml";
+    public String SCREEN_2_FXML = "screen_002.fxml";
+    public String SCREEN_3_FXML = "screen_003.fxml";
 
 }
 ```
@@ -49,17 +49,24 @@ public String SCREEN_3_FXML = "screen_003.fxml";
  Foreach of the screens/views controllers, implement the IScreenController and implement the single method setScreenLoader() E.g
 	
 ```java
-public class Screen1Controller implements Initializable, IScreenController {
-	 private ScreenLoader loader;
-	 @Override
-public void initialize(URL url, ResourceBundle rb) {
- // TODO
-	 }
-	 @Override
-public void setScreenParent(ScreenLoader loader) {
- this.loader = loader;
-	 }
+public class Screen_001Controller implements Initializable, IScreenController {
 
+    private ScreenLoader loader;
+    /**
+     * Initializes the controller class.
+     * @param url
+     * @param rb
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+
+    @Override
+    public void setScreenParent(ScreenLoader loader) {
+        this.loader = loader;
+    }
+    
 }
 ```
 ###### STEP 3
@@ -79,13 +86,21 @@ public class MainViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 	ScreenLoader loader = new ScreenLoader();
 
-loader.setWrapperAnchorPane(wrapperAnchorPane);
-loader.allowAnimation(AnimationSettings.ANIMATION_ON);
-loader.setAnimationType(AnimationSettings.ANIMATION_FADE);
-loader.setAnimationDuration(1);
-Screens screen = Screens.getInstance();
-loader.loadScreen(screen.SCREEN_1_NAME, screen.PACKAGE_VIEW + screen.SCREEN_1_FXML);
-loader.loadScreen(screen.SCREEN_2_NAME, screen.PACKAGE_VIEW + screen.SCREEN_2_FXML);
+	// Configure loader
+	loader.allowAnimation(AnimationSettings.ANIMATION_ON);
+	loader.setAnimationType(AnimationSettings.ANIMATION_FADE);
+	loader.setAnimationDuration(1);
+	// Load screens
+	loader.loadScreen(screen.SCREEN_1_NAME, screen.PACKAGE_VIEW + screen.SCREEN_1_FXML);
+	loader.loadScreen(screen.SCREEN_2_NAME, screen.PACKAGE_VIEW + screen.SCREEN_2_FXML);
+	loader.loadScreen(screen.SCREEN_3_NAME, screen.PACKAGE_VIEW + screen.SCREEN_3_FXML);
+
+	// Load the initial (first) screen
+	loader.setScreen(screen.SCREEN_1_NAME);
+	// Set the parent container [Must be AnchorPane]
+	loader.setWrapperAnchorPane(wrapperAnchorPane);
+
+	Screens screen = Screens.getInstance();
 
 
 view1Button.setOnAction((ActionEvent event) -> {
