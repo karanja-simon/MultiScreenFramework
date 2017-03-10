@@ -10,14 +10,9 @@ To contribute, please see the contribution section.
 Ensure you have a minimum of Java 8 installed. If you are biulding from sources, ensure you have the latest JDK or atleast JDK8 and above.
 
 #### Usage
+To use the library, follow the steps carefully. 
+> Please note that only an AnchorPane is fully supported as the wrapper container.
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
 
 And repeat
 
